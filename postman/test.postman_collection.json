@@ -1,149 +1,81 @@
 {
-	"id": "2107b58f-d698-c65f-742c-0e0abe5db2d8",
-	"name": "test",
-	"description": "",
-	"order": [
-		"169e9c13-222b-5334-d058-7cdd9d7f75e8",
-		"2b79c039-c6bd-7d75-7d7b-b6c6bf3aefe8",
-		"9c291371-335c-8d3a-2867-bdc77b75724a",
-		"6bb97eed-9da8-c696-2ca3-63704e2bee8c",
-		"050d64f5-9564-71b9-4c3d-847ce58babf5"
-	],
-	"folders": [],
-	"folders_order": [],
-	"timestamp": 1542429487529,
-	"owner": 0,
-	"public": false,
-	"requests": [
+	"info": {
+		"_postman_id": "84c77887-60b4-42c1-b9d6-016e18e776a8",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
 		{
-			"id": "050d64f5-9564-71b9-4c3d-847ce58babf5",
-			"headers": "",
-			"headerData": [],
-			"url": "http://localhost:3000/deleteData/3",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "DELETE",
-			"collectionId": "2107b58f-d698-c65f-742c-0e0abe5db2d8",
-			"data": null,
-			"dataMode": "params",
-			"name": "deleteData",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1542436473631,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {}
-		},
-		{
-			"id": "169e9c13-222b-5334-d058-7cdd9d7f75e8",
-			"headers": "",
-			"headerData": [],
-			"url": "http://localhost:3000/getAll",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "GET",
-			"data": null,
-			"dataMode": "params",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1542429631571,
 			"name": "getAll",
-			"description": "",
-			"collectionId": "2107b58f-d698-c65f-742c-0e0abe5db2d8",
-			"responses": []
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:3000/api/getAll"
+			},
+			"response": []
 		},
 		{
-			"id": "2b79c039-c6bd-7d75-7d7b-b6c6bf3aefe8",
-			"headers": "",
-			"headerData": [],
-			"url": "http://localhost:3000/getID/8",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "2107b58f-d698-c65f-742c-0e0abe5db2d8",
-			"data": null,
-			"dataMode": "params",
 			"name": "getID",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1542430862390,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {}
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:3000/api/getID/8"
+			},
+			"response": []
 		},
 		{
-			"id": "6bb97eed-9da8-c696-2ca3-63704e2bee8c",
-			"headers": "Content-Type: application/json\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "http://localhost:3000/updateData/2",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "PUT",
-			"collectionId": "2107b58f-d698-c65f-742c-0e0abe5db2d8",
-			"data": [],
-			"dataMode": "raw",
-			"name": "updateData",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1542436316455,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n\t\"a\":1\n}"
-		},
-		{
-			"id": "9c291371-335c-8d3a-2867-bdc77b75724a",
-			"headers": "Content-Type: application/json\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "http://localhost:3000/addData",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "POST",
-			"collectionId": "2107b58f-d698-c65f-742c-0e0abe5db2d8",
-			"data": [],
-			"dataMode": "raw",
 			"name": "addData",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1542435932065,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n\"a\":1\t\n\n}"
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"a\":1\t\n\n}"
+				},
+				"url": "http://localhost:3000/api/addData"
+			},
+			"response": []
+		},
+		{
+			"name": "updateData",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"a\":1\n}"
+				},
+				"url": "http://localhost:3000/api/updateData/2"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteData",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": "http://localhost:3000/api/deleteData/3"
+			},
+			"response": []
 		}
 	]
 }
